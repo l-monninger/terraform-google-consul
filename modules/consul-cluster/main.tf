@@ -138,6 +138,8 @@ resource "google_compute_firewall" "allow_intracluster_consul" {
       var.serf_wan_port,
       var.http_api_port,
       var.dns_port,
+      var.https_port,
+      var.grpc_port
     ]
   }
 

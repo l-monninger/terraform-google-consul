@@ -245,6 +245,18 @@ variable "dns_port" {
   default     = 8600
 }
 
+variable "https_port" {
+  description = "The port used by clients to use the https api."
+  type        = number
+  default     = 8501
+}
+
+variable "grpc_port" {
+  description = "The port used by clients to use the grpc api."
+  type        = number
+  default     = 8502
+}
+
 # Disk Settings
 
 variable "root_volume_disk_size_gb" {
